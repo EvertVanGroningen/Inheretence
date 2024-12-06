@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elf : EnemyParent
+public class Elf : Unit
 {
     public bool isVisible;
     void Start()
@@ -20,7 +20,7 @@ public class Elf : EnemyParent
     {
         if (other.CompareTag("TheCube"))
         {
-            OnHit(1);
+            TakeDamage();
         }
     }
 

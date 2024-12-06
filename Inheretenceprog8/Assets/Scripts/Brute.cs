@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Brute : EnemyParent
+public class Brute : Unit
 {
     void Start()
     {
@@ -18,7 +18,7 @@ public class Brute : EnemyParent
     {
         if (other.CompareTag("TheCube"))
         {
-            OnHit(1);
+            TakeDamage();
         }
     }
 }

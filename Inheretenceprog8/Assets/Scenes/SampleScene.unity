@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -122,6 +123,157 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &188414918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188414923}
+  - component: {fileID: 188414922}
+  - component: {fileID: 188414921}
+  - component: {fileID: 188414920}
+  - component: {fileID: 188414919}
+  - component: {fileID: 188414924}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &188414919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188414918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b917fadb111ea554197093ef7e6617e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  moveSpeed: 5
+  rotationSpeed: 180
+--- !u!136 &188414920
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188414918}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &188414921
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188414918}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &188414922
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188414918}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &188414923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188414918}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15, y: 2.51, z: 1.5205882}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &188414924
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188414918}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &639881311
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +306,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4839011c11100140b06a7c24941fc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 0
+  health: 0
+  moveSpeed: 5
+  rotationSpeed: 180
   isVisible: 0
 --- !u!135 &639881313
 SphereCollider:
@@ -274,7 +428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4839011c11100140b06a7c24941fc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 0
+  health: 0
+  moveSpeed: 5
+  rotationSpeed: 180
   isVisible: 0
 --- !u!135 &676968674
 SphereCollider:
@@ -700,7 +856,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b825f5a3510d1dd42bcc95c62e805ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 0
+  health: 0
+  moveSpeed: 5
+  rotationSpeed: 180
 --- !u!65 &1161464215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -819,7 +977,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b825f5a3510d1dd42bcc95c62e805ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 0
+  health: 0
+  moveSpeed: 5
+  rotationSpeed: 180
 --- !u!65 &1229526137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -938,7 +1098,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b825f5a3510d1dd42bcc95c62e805ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 0
+  health: 0
+  moveSpeed: 5
+  rotationSpeed: 180
 --- !u!65 &1293820841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1057,7 +1219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4839011c11100140b06a7c24941fc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lives: 0
+  health: 0
+  moveSpeed: 5
+  rotationSpeed: 180
   isVisible: 0
 --- !u!135 &1372168320
 SphereCollider:
@@ -1158,3 +1322,4 @@ SceneRoots:
   - {fileID: 639881316}
   - {fileID: 1372168323}
   - {fileID: 676968677}
+  - {fileID: 188414923}
