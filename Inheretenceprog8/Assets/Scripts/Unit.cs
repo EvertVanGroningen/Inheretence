@@ -7,17 +7,22 @@ public class Unit : MonoBehaviour, IMovable, IDamagable
 {
     public int health;
     public int Health => health;
-    public float moveSpeed = 5f;
+    public float sped;
+    public float moveSpeed => sped;
     public float rotationSpeed = 180f;
     public void Run(float Speed)
     {
         transform.position += new Vector3 (Speed, 0, 0);
-        Move();
     }
 
     public void DefineLives(int punten)
     {
         health = punten;
+    }
+
+    public void DefineSped(int sonic)
+    {
+        sped = sonic;
     }
 
     public virtual void TakeDamage()

@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elf : Unit
+public class Elf : Unit, IMovable, IDamagable
 {
     public bool isVisible;
     void Start()
     {
         DefineLives(2);
+        DefineSped(2);
         StartCoroutine(ToggleVisibility());
     }
 
     void Update()
     {
-        Run(2 * Time.deltaTime);
+        //Run(2 * Time.deltaTime);
+        Move();
     }
 
     void OnTriggerEnter(Collider other)
