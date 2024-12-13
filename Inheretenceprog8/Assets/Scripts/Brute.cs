@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Brute : Unit, IMovable, IDamagable
 {
-    void Start()
+    //dit defineert alles waneer de game opstart
+    void Start() 
     {
         DefineLives(4);
-        DefineSped(1);
+        DefineSpeed(1);
     }
 
     void Update()
     {
-        //Run(0.5f * Time.deltaTime);
-        Move();
+        //dit laat hem rennen
+        Move(); 
     }
 
-    void OnTriggerEnter(Collider other)
+    //Dit zorgt ervoor dat waneer de unit word geraakt dat hij damage neemt
+    void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag("TheCube"))
         {

@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class Elf : Unit, IMovable, IDamagable
 {
-    public bool isVisible;
+    public bool isVisible; //om te kijken of de elf momenteel ontzichtbaar is
+    //dit defineert alles waneer de game opstart
     void Start()
     {
         DefineLives(2);
-        DefineSped(2);
+        DefineSpeed(2);
         StartCoroutine(ToggleVisibility());
     }
 
-    void Update()
+    void Update() 
     {
-        //Run(2 * Time.deltaTime);
-        Move();
+        //dit laat hem rennen
+        Move(); 
     }
 
-    void OnTriggerEnter(Collider other)
+    //Dit zorgt ervoor dat waneer de unit word geraakt dat hij damage neemt
+    void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag("TheCube"))
         {
@@ -26,7 +28,8 @@ public class Elf : Unit, IMovable, IDamagable
         }
     }
 
-    private IEnumerator ToggleVisibility()
+    //Dit maakt de elf ontzichtbaar voor een halve seconde met een pauze van 3 seconden
+    private IEnumerator ToggleVisibility() 
     {
         while (true)
         {
