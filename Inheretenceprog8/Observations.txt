@@ -1,12 +1,23 @@
 begonnen op 10:00 en eindigde op 15:00
 
-Er word erg veel uitgelegd over welke knop wat doet wat ons laat denken dat het niet duidelijk genoeg is wat de controls zijn.
+Er word erg veel uitgelegd over welke knop wat doet.
+
+Er word gezegd dat je niet omhoog kan lopen als de trein om laag rijdt.
 
 Er word gezegd dat de physics wel leuk zijn maar dat het vervelend is dat je soms niet kan lopen.
 
-Het is lichtelijk onduidelijk wat de numers betekenen. En er word gezegd dat er wat meer detail in de dozen moeten zoals kleuren.
+Er word gezegd dat het lichtelijk onduidelijk is wat de numers betekenen.
+
+Er word gezegd dat er wat meer detail in de dozen moeten zoals kleuren.
 
 Conclusie:
-Er werd gezegd dat waneer de trein omlaag rijdt je niet omhaag kan lopen, dit zou een bug kunnen zijn dat je dat wel hoort te kunnen doen.
+Er werd gezegd dat waneer de trein omlaag rijdt je niet omhoog kan lopen, dit zou een bug kunnen zijn dat je dat wel hoort te kunnen doen.
 Er werd veel gevraagd over de controlls want het was alleen geoptimalizeerd voor xbox en niet voor playstation, dit zou de usability omlaag brengen en is zeker een verbeter punt.
 Er werd doorgegeven dat het spel onduidelijk kan zijn als in wat het doel is, dit zou de fun van de game kunnen verbeteren al zou het meer duidelijk zijn.
+Er werd gezegd dat de dozen onduidelijk waren dus al zou er wat meer info over zijn of al zouden de dozen visueel meer verschillend zijn zou dat de ervaring verbeteren.
+
+Acties:
+De physics zoals zwaartekracht moeten verbeterd worden.
+Er moet een detection systeem komen om te kijken voor welke controller je gebruikt of maak het zodat het past bij bijde.
+Het doel van het spel moet verduidelijkt worden door bijvoorbeeld een "current task" meter bovenin het scherm te zetten.
+De dozen moeten meer visuele verschillen krijgen zoals groote en kleur.
